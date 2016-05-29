@@ -69,7 +69,7 @@ class Controller:
 
     #FUNCAO A SER COMPLETADA. Deve calcular features expandidas do estados (Dica: deve retornar um vetor)
     def compute_features(self, state):
-        features = [state.wheel_x, state.rod_angle, state.angular_velocity]
+        features = [state.wheel_x, state.rod_angle, state.angular_velocity, state.wind, state.friction, state.velocity_x, state.velocity_y]
         print "roda     ", state.wheel_x/1200
         print "angulo   ", state.rod_angle/60
         print "ang vel  ", state.angular_velocity/4000
